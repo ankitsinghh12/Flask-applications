@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} 
+
+{% block title %} 
+Display
+{% endblock %}
+
+{% block content %} 
+
+<h3> All the available Sabji's at Kanav's Sabji Mandi</h3>
+
+<ul>
+    {% for sabji in sabjis %} 
+        <li>{{ sabji }]</li>
+{% endfor %}        
+</ul>
+{% endblock %} 
